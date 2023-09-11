@@ -1,0 +1,245 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px
+}
+
+/* Navigation Bar */
+#navBar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navBar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 30px;
+}
+
+#logo img{
+    height: 40px;
+    border-radius: 20px;
+    margin: 5px 5px;
+}
+
+/* Navigation Bar:List styling */
+#navBar ul{
+    display: flex;
+}
+
+#navBar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navBar ul li a{
+    color: white;
+    font-family: 'Viga', sans-serif;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navBar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 642px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url('../images/platter-2009590_1280.jpg') no-repeat center center/cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.83;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    font-weight: lighter;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Viga', sans-serif;
+}
+
+/* Services Section */
+#services-container h1{
+    color: rgb(53, 9, 9);
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box{
+    border: 2px solid rgb(53, 9, 9);
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    padding: 35px;
+    margin: 25px 5px;
+    margin-bottom: 30px;
+    color: rgb(53, 9, 9) ;
+} 
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+
+#services .box h2{
+    color: rgb(53, 9, 9);
+}
+
+#services .box p{
+    font-family: 'Viga', sans-serif;
+    color: rgb(53, 9, 9);
+}
+
+/* Client-section */
+/* #Client-section{
+    
+} */
+
+#Client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/pancakes-2291908_1280.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 49%;
+    z-index: -1;
+    opacity: 0.53;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding:  67px 34px;
+}
+
+#clients img{
+    height: 140px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/contactus_hd_img.jpg)no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.53;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+#contact-box form{
+    width: 45%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Viga', sans-serif;
+    color: rgb(53, 9, 9)
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer{
+    background: rgb(53, 9, 9);
+    color: white;
+    padding: 12px 23px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.6rem;
+    padding: 13px;
+    font-family: 'Viga', sans-serif;
+    font-weight: lighter;
+    color: rgb(53, 9, 9);
+
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Viga', sans-serif;
+    color: rgb(53, 9, 9);
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(53, 9, 9);
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
